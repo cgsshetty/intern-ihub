@@ -1,0 +1,336 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex justify-between items-center">
+            <div class="flex items-center space-x-16">
+                <h1 class="text-2xl font-bold font-awesome ">OpportunityHub</h1>
+                <div class="space-x-8">
+                   
+                <a href="#" class="text-gray-600 hover:text-gray-900">Jobs</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Pricing</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Testimonials</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="px-4 py-2 text-gray-600 hover:text-blue-600">Sign In</button>
+                <button class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">Log In</button>
+            </div>
+            </nav>
+        </div>
+        <!-- Hero Section -->
+        <section class="relative h-[500px]">
+            <!-- Image Layer -->
+            <div class="absolute inset-0">
+                <img src="19184614_6101000 1.png" alt="Background" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            
+            <!-- Content Layer -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="container mx-auto px-4">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h1 class="text-4xl font-bold mb-6 text-white">Find Your Dream Job Today</h1>
+                        <p class="text-gray-200 mb-8">Browse through thousands of full-time and part-time jobs near you</p>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="relative">
+                                    <i class="fas fa-search absolute left-3 top-3.5 text-gray-400"></i>
+                                    <input type="text" placeholder="Enter job title" 
+                                           class="w-full pl-10 pr-4 py-3 border rounded-lg"
+                                           list="job-suggestions">
+                                    <datalist id="job-suggestions">
+                                        <option value="Software Engineer">
+                                        <option value="Product Manager">
+                                        <option value="Data Scientist">
+                                        <option value="UX Designer">
+                                        <option value="Marketing Manager">
+                                        <option value="Sales Executive">
+                                        <option value="Project Manager">
+                                        <option value="Content Writer">
+                                    </datalist>
+                                </div>
+                                <div class="relative">
+                                    <i class="fas fa-location-dot absolute left-3 top-3.5 text-gray-400"></i>
+                                    <input type="text" placeholder="Enter location" 
+                                           class="w-full pl-10 pr-4 py-3 border rounded-lg"
+                                           list="location-suggestions">
+                                    <datalist id="location-suggestions">
+                                        <option value="New York, USA">
+                                        <option value="San Francisco, USA">
+                                        <option value="London, UK">
+                                        <option value="Singapore">
+                                        <option value="Toronto, Canada">
+                                        <option value="Sydney, Australia">
+                                        <option value="Berlin, Germany">
+                                        <option value="Remote">
+                                    </datalist>
+                                </div>
+                                <button class="bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800">
+                                    Search Jobs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- User Types Section -->
+                            <section class="py-16 bg-gray-50">
+                                <div class="container mx-auto px-4">
+                                <div class="space-y-12">
+                                    <!-- Employers -->
+                                    <div class="flex flex-col md:flex-row items-center gap-8">
+                                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-building text-3xl text-blue-600"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex flex-col md:flex-row justify-between items-start w-full">
+                                        <h3 class="text-2xl font-bold mb-2 md:w-1/3">FOR EMPLOYERS</h3>
+                                        <div class="md:w-1/2">
+                                            <p class="text-gray-600">Find the right person for your team. Post jobs, review applications, and connect with candidates all in one place.</p>
+                                            <button class="mt-4 relative bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(255,255,255,0.2)] before:transform before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-500 overflow-hidden">
+                                                <span class="relative z-10 hover:animate-pulse">Post a Job</span>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr class="border-gray-200">
+
+                                    <!-- Candidates -->
+                                    <div class="flex flex-col md:flex-row items-center gap-8">
+                                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-user-tie text-3xl text-green-600"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex flex-col md:flex-row justify-between items-start w-full">
+                                        <h3 class="text-2xl font-bold mb-2 md:w-1/3">FOR CANDIDATES</h3>
+                                        <div class="md:w-1/2">
+                                            <p class="text-gray-600">Your dream job is waiting. Browse through thousands of opportunities and apply with just one click.</p>
+                                            <button class="mt-4 relative bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(255,255,255,0.2)] before:transform before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-500 overflow-hidden">
+                                                <span class="relative z-10 hover:animate-pulse">Find Jobs</span>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <hr class="border-gray-200">
+
+                                    <!-- Freelancers -->
+                                    <div class="flex flex-col md:flex-row items-center gap-8">
+                                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-laptop-code text-3xl text-purple-600"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex flex-col md:flex-row justify-between items-start w-full">
+                                        <h3 class="text-2xl font-bold mb-2 md:w-1/3">FOR FREELANCERS</h3>
+                                        <div class="md:w-1/2">
+                                            <p class="text-gray-600">Work on your terms. Find gigs that match your skills and schedule, all while building your portfolio.</p>
+                                            <button class="mt-4 relative bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-all duration-300 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[rgba(255,255,255,0.2)] before:transform before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-500 overflow-hidden">
+                                                <span class="relative z-10 hover:animate-pulse">Start Freelancing</span>
+                                            </button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+
+    <!-- Job Listings -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8">Featured Jobs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Job Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex justify-between items-start mb-4">
+                <img src="https://via.placeholder.com/50" alt="Company logo" class="w-12 h-12 rounded-lg">
+                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Full-time</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Senior UI Designer</h3>
+                <p class="text-gray-600 mb-4">Google Inc.</p>
+                <div class="flex items-center text-gray-500 mb-4">
+                <i class="fas fa-location-dot mr-2"></i>
+                <span>New York, USA</span>
+                </div>
+                <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-semibold">$40-50k/year</span>
+                <button class="text-blue-600 hover:text-blue-700">Apply Now</button>
+                </div>
+            </div>
+            <!-- Job Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex justify-between items-start mb-4">
+                <img src="https://via.placeholder.com/50" alt="Company</div> logo" class="w-12 h-12 rounded-lg">
+                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Remote</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Full Stack Developer</h3>
+                <p class="text-gray-600 mb-4">Microsoft</p>
+                <div class="flex items-center text-gray-500 mb-4">
+                <i class="fas fa-location-dot mr-2"></i>
+                <span>Seattle, USA</span>
+                </div>
+                <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-semibold">$60-80k/year</span>
+                <button class="text-blue-600 hover:text-blue-700">Apply Now</button>
+                </div>
+            </div>
+            <!-- Job Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex justify-between items-start mb-4">
+                <img src="https://via.placeholder.com/50" alt="Company logo" class="w-12 h-12 rounded-lg">
+                <span class="bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full">Part-time</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Product Manager</h3>
+                <p class="text-gray-600 mb-4">Apple Inc.</p>
+                <div class="flex items-center text-gray-500 mb-4">
+                <i class="fas fa-location-dot mr-2"></i>
+                <span>Cupertino, USA</span>
+                </div>
+                <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-semibold">$70-90k/year</span>
+                <button class="text-blue-600 hover:text-blue-700">Apply Now</button>
+                </div>
+            </div>
+            <!-- Job Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex justify-between items-start mb-4">
+                <img src="https://via.placeholder.com/50" alt="Company logo" class="w-12 h-12 rounded-lg">
+                <span class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full">Contract</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">DevOps Engineer</h3>
+                <p class="text-gray-600 mb-4">Amazon</p>
+                <div class="flex items-center text-gray-500 mb-4">
+                <i class="fas fa-location-dot mr-2"></i>
+                <span>Austin, USA</span>
+                </div>
+                <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-semibold">$55-75k/year</span>
+                <button class="text-blue-600 hover:text-blue-700">Apply Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Categories -->
+        <section class=py-6 bg-white>
+            <div class="container mx-auto px-4">
+                <h2 class="text-xl font-bold mb-4">Popular Categories</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-gray-50 p-3 rounded-lg text-center hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-code text-blue-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-sm">Development</h3>
+                        <p class="text-gray-500 text-xs mt-1">1,200+ Jobs</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-3 rounded-lg text-center hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-palette text-green-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-sm">Design</h3>
+                        <p class="text-gray-500 text-xs mt-1">800+ Jobs</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-3 rounded-lg text-center hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-chart-line text-yellow-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-sm">Marketing</h3>
+                        <p class="text-gray-500 text-xs mt-1">950+ Jobs</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-3 rounded-lg text-center hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-users text-purple-600 text-sm"></i>
+                        </div>
+                        <h3 class="font-semibold text-sm">Human Resources</h3>
+                        <p class="text-gray-500 text-xs mt-1">600+ Jobs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-8">Latest Blog Posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm mx-auto">
+                <img src="https://via.placeholder.com/400x200" alt="Blog post" class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 transition-colors">How to Prepare for a Technical Interview</h3>
+                    <p class="text-gray-600 mb-3 text-sm">Tips and tricks to ace your next technical interview...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 transition-colors flex items-center text-sm"></a>
+                        Read More 
+                        <span class="transform transition-transform duration-300 inline-block hover:translate-x-2">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm mx-auto">
+                <img src="https://via.placeholder.com/400x200" alt="Blog post" class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 transition-colors">Top Skills Employers Look For in 2024</h3>
+                    <p class="text-gray-600 mb-3 text-sm">Stay ahead of the curve with these in-demand skills...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 transition-colors flex items-center text-sm">
+                        Read More 
+                        <span class="transform transition-transform duration-300 inline-block hover:translate-x-2">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2 max-w-sm mx-auto">
+                <img src="https://via.placeholder.com/400x200" alt="Blog post" class="w-full h-40 object-cover transition-transform duration-300 hover:scale-105">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 hover:text-blue-600 transition-colors">Remote Work: The New Normal</h3>
+                    <p class="text-gray-600 mb-3 text-sm">How to thrive in a remote work environment...</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-700 transition-colors flex items-center text-sm"></a>
+                        Read More 
+                        <span class="transform transition-transform duration-300 inline-block hover:translate-x-2">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Newsletter -->
+    <section class="bg-blue-600 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get Job Notifications</h2>
+            <p class="text-blue-100 mb-8">Subscribe to our newsletter and get latest job postings</p>
+            <div class="max-w-xl mx-auto flex gap-4">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 JobHunt. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
